@@ -67,34 +67,177 @@ function desafio7(_nombre = "desconcido") {
 }
 desafio7("Sergio");
 desafio7();
-*/
+
 function suma(numero1, numero2) {
   const resultado = numero1 + numero2;
   console.log(
-    numero1 + " " + "+" + " " + " " + numero2 + " " + "=" + resultado
+    numero1 + " " + "+" + " " + numero2 + " " + "=" + " " + resultado
   );
 }
 suma(8, 4);
 function resta(numero1, numero2) {
   const resultado = numero1 - numero2;
-  console.log(numero1 + " " + "-" + " " + numero2 + " " + "=" + resultado);
+  console.log(
+    numero1 + " " + "-" + " " + numero2 + " " + "=" + " " + resultado
+  );
 }
 resta(8, 4);
 
 function multiplicacion(numero1, numero2) {
   const resultado = numero1 * numero2;
-  console.log(numero1 + " " + "*" + " " + numero2 + " " + "=" + resultado);
+  console.log(
+    numero1 + " " + "x" + " " + numero2 + " " + "=" + " " + resultado
+  );
 }
 multiplicacion(8, 4);
 
 function division(numero1, numero2) {
   const resultado = numero1 / numero2;
-  console.log(numero1 + " " + "/" + " " + numero2 + " " + "=" + resultado);
+  console.log(
+    numero1 + " " + "/" + " " + numero2 + " " + "=" + " " + resultado
+  );
 }
 division(8, 4);
 
 function modulo(numero1, numero2) {
   const resultado = numero1 % numero2;
-  console.log(numero1 + " " + "%" + " " + numero2 + " " + "=" + resultado);
+  console.log(
+    numero1 + " " + "%" + " " + numero2 + " " + "=" + " " + resultado
+  );
 }
 modulo(8, 4);
+
+function potencia(numero1, numero2) {
+  const resultado = numero1 ** numero2;
+  console.log(
+    numero1 + " " + "^" + " " + numero2 + " " + "=" + " " + resultado
+  );
+}
+potencia(8, 4);
+
+function suma(numero1, numero2) {
+  const resultado = numero1 + numero2;
+  console.log(
+    numero1 + " " + "+" + " " + numero2 + " " + "=" + " " + resultado
+  );
+}
+//desafio 9
+/*- Crear seis funciones, (suma, resta, multiplica, divide, módulo, potencia),
+cada función debe recibir 2 números y retornar un resultado según corresponda.
+- Crear otra función que reciba el nombre de la operación y 2 números,
+debe imprimir el resultado.*/
+/*
+function sumar(numero1, numero2) {
+  return numero1 + numero2;
+}
+
+function restar(numero1, numero2) {
+  return numero1 - numero2;
+}
+
+function multiplicar(numero1, numero2) {
+  return numero1 * numero2;
+}
+
+function dividir(numero1, numero2) {
+  return numero1 / numero2;
+}
+
+function modulo(numero1, numero2) {
+  return (resultado = numero1 % numero2);
+}
+
+function potencia(numero1, numero2) {
+  return (resultado = numero1 ** numero2);
+}
+
+function operaciones(operacion, numero1, numero2) {
+  let resultado;
+  if (operacion === "+") {
+    resultado = sumar(numero1, numero2);
+  }
+
+  if (operacion === "-") {
+    resultado = restar(numero1, numero2);
+  }
+  if (operacion === "x") {
+    resultado = multiplicar(numero1, numero2);
+  }
+  if (operacion === "/") {
+    resultado = dividir(numero1, numero2);
+  }
+  if (operacion === "%") {
+    resultado = modulo(numero1, numero2);
+  }
+  if (operacion === "^") {
+    resultado = potencia(numero1, numero2);
+  }
+  console.log(numero1 + " " + operacion + " " + numero2 + " = " + resultado);
+}
+
+operaciones("+", 8, 4);
+operaciones("-", 8, 4);
+operaciones("x", 8, 4);
+operaciones("/", 8, 4);
+operaciones("%", 8, 4);
+operaciones("^", 8, 4);
+*/
+/*Crear una función que reciba 4 números, mostrar el resultado de: a/b*(c+d)  */
+function calcular(a, b, c, d) {
+  return (a / b) * (c + d);
+}
+let resultado = calcular(3, 4, 5, 6);
+console.log(calcular);
+
+//Crear una función que reciba 2 números, imprimir el mayor
+function mayor(a, b) {
+  if (a > b) {
+    console.log(a + " es mayor que" + " " + b);
+  } else {
+    console.log(a + " es menor que" + " " + b);
+
+    {
+    }
+  }
+}
+mayor(3, 5);
+mayor(5, 3);
+//Crear una función que reciba 1 número, imprimir si es negativo o si es positivo.
+
+/*function numero(num1) {
+  if (num1 >= 0) {
+    console.log("El numero es positivo");
+  } else {
+    console.log("El numero es negativo");
+  }
+}
+numero(-1);
+numero(5);
+*/
+/*Crear una función que reciba 2 números, imprimir si el primer número es
+divisible por el segundo.*/
+function divisible(num1, num2) {
+  if (num1 % num2 == 0) {
+    console.log(num1 + " es divisible por " + num2);
+  } else {
+    console.log(num1 + " no es divisible por " + num2);
+  }
+}
+divisible(6, 3);
+divisible(5, 2);
+
+/*Crear una función que reciba 1 número, imprimir si es negativo o si es
+positivo o si es cero.*/
+function numero(num1) {
+  if (num1 > 0) {
+    console.log("El numero es positivo");
+  }
+  if (numero === 0) {
+    console.log("El numero es 0");
+  } else {
+    console.log("El numero es negativo");
+  }
+}
+numero(-189897298);
+numero(0);
+numero(100000);
